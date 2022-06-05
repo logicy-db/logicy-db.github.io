@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Creattion Demo';
+  src: url("CreattionDemo.otf");
+}
+@font-face {
+  font-family: 'Roboto Condensed Light';
+  src: url("RobotoCondensed-Light.ttf");
+}
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url("RobotoCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: 'KGBlank Space Sketch';
+  src: url("KGBlankSpaceSketch.ttf");
+}
+body {
+  font-family: "Roboto Condensed", serif;
+  margin-right: 0;
+  margin-left: 0;
+}
+body div,
+body span {
+  font-size: calc(15px + 1vw);
+}
+body table {
+  margin: calc(10px + 2vh) 0;
+  border-collapse: collapse;
+}
+body table td {
+  width: 50%;
+  vertical-align: top;
+}
+body table td:first-child {
+  padding-right: 20px;
+}
+body table tr:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+body header .header-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+body header .header-content .logo-wrapper,
+body header .header-content .button-wrapper {
+  flex: 0;
+}
+body header .header-content .title {
+  flex: 1;
+}
+body header .header-content .logo-wrapper {
+  text-align: center;
+  min-width: 40px;
+}
+body header .header-content .button-wrapper {
+  text-align: right;
+}
+body header .header-content .button-wrapper #lang-switcher {
+  border: none;
+  background-color: unset;
+  margin: 0 auto;
+  width: 40px;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto Condensed", serif;
+  font-size: calc(16px + 1vw);
+}
+body header .header-content .logo {
+  font-family: "Creattion Demo", serif;
+  font-size: calc(20px + 1vw);
+}
+body header .header-content .title,
+body header .header-content .logo-wrapper {
+  display: table;
+}
+body header .header-content .title span,
+body header .header-content .logo-wrapper span {
+  display: table-cell;
+  vertical-align: middle;
+}
+body header .title {
+  text-align: center;
+  font-family: "KGBlank Space Sketch", serif;
+  margin-bottom: 5px;
+}
+body header .title span {
+  font-size: calc(20px + 1vw);
+}
+body img {
+  width: 100%;
+}
+body .section-content {
+  padding: 10px;
+}
+body .page-content {
+  margin: 0 auto;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+body .section {
+  position: relative;
+}
+body .section .section-background {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+body .section .section-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: 'Roboto Condensed Bold', serif;
+  letter-spacing: 1px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+}
+body .section .section-title span {
+  font-size: calc(20px + 2vw);
+}
+body .section.hide-background .section-background {
+  z-index: -1;
+  filter: blur(10px);
+}
+body .section.hide-background .section-background:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+body .section.hide-background .section-title {
+  display: none;
+}
+body .section-1.hide-background .section-background:before {
+  background: rgba(255, 255, 255, 0.8);
+}
+body .section-5 .section-background {
+  background-position-y: bottom;
+  background-position-x: right;
+}
+body footer {
+  margin-top: 20px;
+}
+body footer .footer-content {
+  text-align: center;
+  font-family: "KGBlank Space Sketch", serif;
+}
+@media only screen and (min-width: 768px) {
+  body header .header-content .button-wrapper #lang-switcher {
+    width: 100px;
+  }
+  body header .header-content .logo-wrapper {
+    min-width: 100px;
+    text-align: center;
+  }
+  body .page-content {
+    max-width: 1500px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/jQuery.js"></script>
+    <title>DB - Mans ceļš uz Latvijas universitāti</title>
+</head>
+<body> 
+    <header>
+        <div class="header-content">
+            <div class="logo-wrapper">
+                <span class="logo">DB</span>
+            </div>
+            <div class="title">
+                <span class="lv">Mans ceļš</span>
+                <span class="eng">My path</span>           
+            </div>
+            <div class="button-wrapper">
+                <button id="lang-switcher">ENG</button>
+            </div>
+        </div>
+        <div class="title">
+            <span class="lv">uz Latvijas universitāti</span>
+            <span class="eng">to University of Latvia</span>
+        </div>
+    </header>
+    
+    <div class="page-content">
+        <div class="section section-0">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/grass.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">Par mani</span>
+                <span class="eng">About me</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Mani sauc Daniels Buls. Es studēju Latvijas Universitātē un esmu Datorikas fakultātes 3. kursa students. Šajā sadaļā es vēlētos īsuma pastāstīt par sevi.</p>
+                    <p>Bērnību es pavadīju privātajā mājā Slokā, tāpēc nebija daudz draugu vai brīvas iespējas komunicēt ar vienaudžiem, salīdzinot ar tiem bērniem, kuri izauguši daudzstāvenēs. Uzskatu, ka tādēļ esmu nedaudz intraverts un tikai draugu lokā varu īsti atvērties.</p>
+                    <p>Skolā viss bija forši un tagad atskatos uz tiem laikiem ar smaidu uz sejas. Ļoti draudzīga un saliedēta klase. Mācījos gudri un cītīgi, tāpēc biju izcilnieks. Mācīties arī nebija grūti, jo manas skolas nav nekāda ģimnāzija. Varu uzskatīt skolas laikus par labākiem uz doto brīdi, jo nebija īsto pienākumu, skolotāji bija pretimnākoši un bija daudz brīvā laika.</p>
+                    <p>Esmu strādājis dažādus darbus vasarās būšot skolnieks: saldējuma pārdevējs, viesmīļa palīgs, ātrās ēdināšanas restorānā kā kasieris un pavārs. Darbs nebija viegls un tā es sapratu, ka fiziskais darbs nav tas, ko gribētu darīt pēc skolas izlaiduma. Tā es nolēmu studēt universitātē.</p>
+                </div>
+                <div class="eng">
+                    <p>My name is Daniels Buls. I am a student of University of Latvia and currently studying on the faculty of Computer Science on the 3rd course. In this section I would like to briefly introduce myself and tell my background.</p>
+                    <p>My childhood I spend in the private house in Sloka, thus I did not have many friends and could not freely communicate with pears as those children that grew in the high-rise buildings. Because of that, I am considering myself a bit of introvert and only with friends can freely express myself.</p>
+                    <p>School was awesome, and currently I am looking back with the smile on my face. Very friendly and cohesive class. Was studying smart and hard, thus was a A-grade student. To be honest, studying was not really that hard, because my school is not like any gymnasium. I can consider the school times the best ones so far, because there were no real responsibilities, teachers were very understanding, and I had a lot of free time.</p>
+                    <p>I have worked all the summers so far after I turned 17: ice-cream seller, waiter helper, worked in a fast-food chain as a cook and cashier. Working was not easy; thus I understood the importance of rather working with my head than with my body. That is why I planned to pursue a degree in a university.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-1">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/locker.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">"Bunkeris"</span>
+                <span class="eng">"Bunker"</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Mani hobiji pārsvarā bija (un joprojām ir) datorspēles. Būšot pusaudzis, vasaras pavadīju pie datora un reti gāju ārā. Mana vecmāmiņa tādēļ sauca manu istabu par “bunkeri”. Sasummējot laiku pavadītu spēlējot datorspēles no iepriekšējiem gadiem, tas būtu neveselīgs (un krietni augsts) skaitlis.</p>
+                    <p>Tāpēc, man gadās tādi brīži, kad es atslēdzos no normāla dzīves ritma un pildu tikai nepieciešamus pienākums, pavadot visu pareju laiku pie datora. Pārsvarā tas ir brīvlaiki vai arī pirms sesijas nedēļas, kad ir jau izdarīts daudz pa priekšu vai arī pretēji, ir tik daudz darāms, ka gribas paslēpties spēlēs un aizmirst par problēmām. Pēdējais tāds brīdis bija šajā pavasarī negaidīts, kad man bija stipra alerģiskā reakcija uz bērzu putekšņiem un injicēto medikamentu blakus efekts bija stipra miegainības sajūta.</p>
+                    <p>Neskatoties uz manu atkarību, es cenšos dzīvot veselīgi – nesmēķēju, nedzēru alkoholiskos dzērienus un bieži meditēju. Tomēr, pavadot pie datora tik daudz laika, es arī iemācījos efektīvi ar to strādāt, kas palīdzēja man turpmāk skolā.</p>
+                </div>
+                <div class="eng">
+                    <p>My hobbies primarily were (and mostly still are) computer games. Most of the summers were spend playing games and seldom leaving my house. My grandma was also mocking me by calling my room a “bunker”. If you sum up all the time that was spend gaming, it would be an unhealthy (and very high) number.</p>
+                    <p>Therefore, I have moments when I am “disconnecting” from the normal life routine and completing the bare minimum of my responsibilities to spend all the remaining time on playing games. Primarily, these moments are holidays and weeks before the exams start, when I have accomplished so much in advance or the opposite, when I am very behind the schedule, the number of tasks overwhelms me, and I try to escape from the problems. The last time was this spring that was very unexpected, because my allergy on pollen stroke (usually it does not) and I was drugged for a week. The drug side effect was constant sleepiness; thus, I physically could not perform well.</p>
+                    <p>Despite my addiction, I am trying to have a healthy lifestyle – I do not smoke, do not drink alcohol and I meditate often. Although, there is one benefit from all of that – I learned how to work with the computer efficiently, that helped me a lot in the school.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-2">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/sky.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">Intereses</span>
+                <span class="eng">My interests</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Kā es ieminējos iepriekš, skolā es biju izcilnieks. Man patika matemātika, ķīmija un, protams, informātika.</p>
+                    <p>Matemātika bija interesanta. Mācies formulas, attīsti loģisko domāšanu, risini problēmas un iegūsti labu atzīmi. Es “graizīju riekstus” – risināju uzdevumus ar lielāku grūtības pakāpi – ar prieku. Man matemātika patika, tomēr es neredzēju perspektīvas mācīties to iedziļināti turpmāk. Tapt par pētnieku es negribēju, par skolotāju kļūt arī, par pārējām specialitātēm es arī baigi daudz informācijas nezināju. Matemātika pati par sevi ir pārāk “sausa” kā es uzzināju universitātē, tāpēc par savu izvēli es neesmu izmisumā.</p>
+                    <p>Ķīmija bija forša, jo skolotāja bija ar lielu pieredzi un mācēja pasniegt savu priekšmetu. Vajadzēja mācīties daudz, cītīgi un no sirds definīcijas, formulas un ķīmiskos procesus. Un man tas sanāca ļoti labi. Uz to brīdi (11. klase) es pat uzskatīju ķīmiju par potenciālo virzienu, kuru es studēšu universitātē. Maksāju un braucu uz Stradiņas Universitāti, lai sagatavotos centralizētiem eksāmeniem ķīmijā, kuru būtu jau nākamajā gadā.</p>
+                    <p>Informātika, bez šaubām, bija mīļākais priekšmets. Es daudz iepriekš pavadīju laiku pie datoru, tāpēc uzdevumi bija viegli, jo nebija nekādas raķešu zinātnes.</p>
+                    <p>Tāpēc izvēle pastāvēja starp datoriku un ķīmiju.</p>
+                </div>
+                <div class="eng">
+                    <p>I have mentioned before that I was a very good student back in school. I liked math, chemistry, and informatics.</p>
+                    <p>Math was interesting. Learn formulas, develop logical thinking, solve problems un get good mark. I was “cracking nuts” – solving high difficulty problems – with joy. I loved math, but I did not see any perspectives of studying it any deeper. I did not want to become a researcher, neither I wanted to be a schoolteacher and I did not see any other opportunities at that time beyond the mentioned ones. Math from my experience is always a bit “dry” as I have learned from university, so I do not regret about my decision.</p>
+                    <p>Chemistry was cool because teacher was very knowledgeable and knew how to teach students. You needed to study hard, learn a lot of things by hearth, such as definitions, formulas, and chemical reactions. And I did it well. By that time (around 11th grade) I even consider chemistry the one to study in university. I even paid for exam preparation sessions and went regularly to the Riga Stradins University.</p>
+                    <p>Informatics without any doubts was my beloved subject. I knew this stuff because of all the previous time spend on computer, thus tasks usually were trivial to me.</p>
+                    <p>Thus, at that point, it would be either computer science or chemistry that I am going to study in the university.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-3">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/sky_forest.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">Virziens</span>
+                <span class="eng">Direction</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Ātri un negaidīti pienāca 12. klase un mums janvārī sāka prasīt par eksāmeniem.</p>
+                    <p>Es domāju par iespēju studēt ķīmiju, bet es atcerējos nesen notikušo gadījumu. Mēs atbraucām uz Latvijas Universitātes Dabas māju, lai veiktu praktisko uzdevumu. Ilgi un precīzi pildījām eksperimenta soļus un ar partneri bijām tuvu šķīduma karsēšanai, kad es nejauši izlēju šķīdumu. Divas stundas bija par velti. Tad es sapratu, ka ķīmija ir nopietns priekšmets un kļūdu sekas var būt krietni nopietnākas par vienkārši par velti pavadītu laiku.</p>
+                    <p>Un tad es sāku apskatīt iespēju studēt datoriku un kļūt par programmētāju. Atšķirības bija kā zeme un debesis:</p>
+                    <ul>
+                        <li>vari strādāt attālināti un studiju laikā;</li>
+                        <li>darba valoda ir angļu, kura man padevās ļoti labi;</li>
+                        <li>augstas algas;</li>
+                        <li>zems risks iegūt problēmas ar veselību, ja esi apzinīgs un pildi ārstu rekomendācijas;</li>
+                        <li>negadījumi nevar būt letāli un tos vienmēr var salabot.</li>
+                    </ul>
+                    <p>Bija nolemts, datorika tā ir! Tomēr mums ir divas universitātes Rīga, kurā var studēt: Latvijas universitāte un Rīgas Tehniskā Universitāte. Tad kuru izvēlēties?</p>
+                </div>
+                <div class="eng">
+                    <p>Suddenly the 12th grade came and in January we were informed about the necessity of choosing the exams to take.</p>
+                    <p>I was thinking to study chemistry, buy remembered one accident that happened recently that year. We came to the House of Nature (which belongs to the University of Latvia) to conduct some chemical experiments. It was tiresome and took us 2 hours just to prepare the solution. We were ready to heat it, but I accidentally spilled it all over the table. Thank God it was not poisonous, but all the effort went in vain. At that point I realized that chemistry is very serious subject, and the stakes are high when a mistake can turn out to be lethal or with permanent consequences to your health. </p>
+                    <p>Then I decided to look up what the computer science holds. The difference was like day and night:</p>
+                    <ul>
+                        <li>you can work remotely and can combine studies with work;</li>
+                        <li>working language is English, in which I was proficient;</li>
+                        <li>high salaries;</li>
+                        <li>low risks to get health problems as far as you are mindful and keep track of your health.</li>
+                    </ul>
+                    <p>Thus, the computer science it is! Although, there are only two places in Riga that teaches computer science: University of Latvia and Riga Technical University. Which one to choose?</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-4">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/path.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">Salīdzinājums</span>
+                <span class="eng">Comparison</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Universitātes un to piedāvātas datoriku studiju programmas man vajadzēja pētīt pašam, jo paziņu augstskolās man nebija. Izmantoju iespēju un arī pieteicos uz pasākumiem no abām universitātēm (“Studentu kurpēs” no LU un “Seko studentam” no RTU), kurā pavadīju 1-2 dienas kopā ar studentu, sekojot viņu ikdienai. Šeit ir mani secinājumi:</p>
+                    <table>
+                        <tr>
+                            <th>RTU</th>
+                            <th>LU</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mācīties 3 gadus un iegūsti tikai bakalaura grādu.
+                            </td>
+                            <td>
+                                Mācīties 4 gadus un iegūsti gan 1. profesionālo kvalifikāciju, gan bakalaura grādu. Viens semestris ir veltīts prakse, kurā kur varēsi iegūt praktiskās iemaņas, kas ir ļoti svarīgi programmētājiem.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Studēsi fiziku un ķīmiju, kas nav pievilcīgs cilvēkam, kurš vēlētos iemācīties tieši programmēšanu.
+                            </td>
+                            <td>
+                                Ne studēsi fiziku un ķīmiju.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mācību telpas neatrodas vienā vietā, tāpēc vajadzēs nedaudz nodarboties ar kardio.
+                            </td>
+                            <td>
+                                Mācību telpas atrodas vienā ēkā.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lai fiziski nonāktu līdz universitātei, vajadzēs braukt gan ar vilcienu, gan ar sabiedrisko.
+                            </td>
+                            <td>
+                                Lai fiziski nonāktu līdz universitātei, vajadzēs tikai braukt ar vilcienu.
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Turklāt, LU bija par 150 vietu vairāk budžetā, un ņemot visu augstāk aprakstītu, tika nolemts studēt tieši LU.</p>
+                </div>
+                <div class="eng">
+                    <p>I needed to review each of the computer science curriculums that each of these universities offer, because I did not have acquaintances there to ask their opinion. Also, I have used the possibility to participate in the events organized by both universities, where highschoolers follow a student whole day to get some inside into their life and what to expect. Here is the summary that I made from all actions above:</p>
+                    <table>
+                        <tr>
+                            <th>Riga Technical University</th>
+                            <th>University of Latvia</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Study for 3 years to get only one degree.
+                            </td>
+                            <td>
+                                Study for 4 years and get whole two degrees. One semester is fully dedicated for the internship, where you are getting practical experience in the field.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Study unrelated to the IT subjects, such as physics and chemistry, when the focus instead should have been put on the programming.
+                            </td>
+                            <td>
+                                You do not study completely unrelated to the IT subjects.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Students will need to walk between the buildings to get to the needed room where the lecture is hold.
+                            </td>
+                            <td>
+                                Lectures are hold in scope of one building only.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                There is additional commute time because I need to take both train and a bus.
+                            </td>
+                            <td>
+                                I need to only take a train to get to the university.
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Additionally, University of Latvia had additionally 150 spots in the budget and, taking in the consideration table information, the choose was made – University of Latvia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-5">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/book.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">Pirmā diena</span>
+                <span class="eng">First day</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Iestājoties LU, ir nepieciešami tikai divi eksāmeni: angļu valodā un matemātikā, kurus es nokārtoju uz 8 un 7 respektīvi. Nav slikti rezultāti, tomēr es uztraucos, ka netikšu budžetā un plānoju ka plānu B studēt šo pašu programmu, bet angļu valodā, maksājot ap 2 tūkstošiem gadā.</p>
+                    <p>Apstiprinājumu par to, ka tiku cauri konkursa 1. kārtai uz šo programmu, es izlasīju pēc ilgas darba dienas Hesburgerā. Biju ļoti, ļoti priecīgs un uzreiz padalījos ar ziņu ar ģimeni.</p>
+                    <p>Pēc trijām dienām braucu uz Rīgu noslēgt līgumu. Nekas īpašs nenotika līdz augustā beigām, kad aizbraucu ballēt uz pirms Aristoteli, t.i., Sējienu.</p>
+                    <p>Un te pirmā studiju diena! Viss izskatās svešs, tāpēc biju samērā piesardzīgs jaunajā vidē. Visvarīgākais, kas notika tajā dienā, tas tie 5 dīvaiņi, kuri aizņēma 3. rindu 13. auditorijā. Šie 5 cilvēki, ieskaitot mani, vēlāk kļuva par Ierindas biedriem™ un vēlāk par tuviem draugiem. Tas ir arī vienīgais notikums universitātes gados, kas man ir ļoti dārgs.</p>
+                </div>
+                <div class="eng">
+                    <p>To enroll in University of Latvia, one need two exams: English and math, which I have scored 8 and 7 respectively. Not bad results, although I was worried that I would not manage to get the scholarship, thus mentally prepared myself to pay to get into the same program, which is taught not in Latvian, but in English.</p>
+                    <p>The confirmation that I have passed the competition I read after long day at work in Hesburger. It was very pleasant news, which I have shared immediately with my family. </p>
+                    <p>After 3 days I went to the University of Latvia to sign the agreement. Nothing special happened till August. I participated in the pre-Aristotle event, when students are introduced to the studies in the very informal way.</p>
+                    <p>And at last, first study day! Everything looked very foreign to be, thus I was careful in the new environment. The most important thing that happened that day, is 5 weirdos that took seats on the 3rd row in the 13th audience. These 5 people, including myself, became Ierindas biedri™ and close friends afterwards. This is the most important event that I keep dearly in my heart.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-6">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/ice.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">(ne) Klātienes studijas</span>
+                <span class="eng">(not) On-site studies</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Klātienes studijas 1. semestrī gāja ļoti labi, jo iekš Ierindas biedriem™ mēs viens otram palīdzējām cik varējām. Mēs bija mērķtiecīgi, tāpēc semestra beigās arī dabūjam valsts stipendijas.</p>
+                    <p>Šajā semestrī es arī kļuvu par brīvprātīgo kvantu programmēšanas grupā QLatvia un pat aizbraucu uz Somiju februārī, kur palīdzēju kursa pasniegšanā. Bet, atbraucot mājās, atnāca…</p>
+                    <p>Pandēmija. 2. semestri, pastudējot 2-3 nedēļas klātienē, mūs aizsūtīja uz attālinātām studijām. Man ir divpusējas sajūtas pret šo visu. Viena puse bija priecīga, jo attālinātas studijas es uzskatīju par brīnumu – nevajag katru dienu 2 stundas pavadīt vilcienā. Atvēri MS Teams un tu esi virtuālajā auditorijā. Tomēr, es uzskatu, ka daudz tika pazaudēts pandēmijas dēļ. Es visticamāk turpinātu brīvprātīgo darbu un paplašinātu savu paziņu loku. Tā vietā es uzsāku strādāt par programmētāju, kas arī sāka traucēt studijām. Attālināto studiju dēļ man arī pazuda motivācija, jo tu esi praktiski izolēts.</p>
+                    <p>Uz dotu brīdi mani atbalsta Ierindas biedri™ un vienīgā motivācija studēt ir dabūt bakalaura grādu.</p>
+                </div>
+                <div class="eng">
+                    <p>On-site studies in the 1st semester went well, primarily because everyone in the Ierindas biedriem™ was actively helping each other. Our determination paid well, since all of us received a scholarship during the semester.</p>
+                    <p>In the meantime, I became a volunteer in teaching quantum programming as a part of QLatvia and even went to the Finland in February to help in teaching. But, when going back home, we were struck by…</p>
+                    <p>Pandemic. The first 2-3 weeks of the 2nd semester were onsite, but afterwards we were send on the remote studies. I had dual feelings about all this. From one side, the remote studies seemed like a blessing – I do not need to spend 2 hours each working day on train commuting. Just open MS Teams and you are listening to the lecture. But all of this came with their drawbacks. I would have continued my volunteer work and improved my social skills, but I decided to work as a programmer, which also damaged my studies. Motivation is gone because of the isolation.</p>
+                    <p>Currently Ierindas biedri™ keeping me afloat, as well as my desire to get the degree.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-7">
+            <div class="section-background" style="background-image: url({{ url_for('static', filename='images/plane.jpg') }});"></div>
+            <div class="section-title">
+                <span class="lv">Nākotne</span>
+                <span class="eng">Future</span>
+            </div>
+            <div class="section-content">
+                <div class="lv">
+                    <p>Neskatoties uz motivācijas trūkumu, es mērķtiecīgi vēlos dabūt bakalauru un pabeigt ar labām atzīmēm (7-9). Atzīmes var būt svarīgas, ja es tālāk vēlēšot iet maģistros.</p>
+                    <p>Nākamajā gadā jāraksta bakalaura darbs, tāpēc, būtu laba ideja strādāt nepilnu slodzi šo vasaru un uzsākt domāt un rakstīt to. Man slikti izdevās izstrādāt kvalifikācijas darbu laika trūkuma dēļ, tāpēc uzsākt agrāk ir loģiski manā skatījumā.</p>
+                    <p>Ceru, ka arī universitāte pāries uz klātieni nākamajā semestrī, lai studentiem būtu iespēja socializēties, nevis dienām ilgi sēdēt mājās.</p>
+                    <p>Pec absolvēšanas… Man grūti pateikt, ko lai es darīšu. Man prātā ir vairākas opcijas:</p>
+                    <ul>
+                        <li>turpināt studijas maģistros ārzemēs ar specializāciju mašīnmācišanās;</li>
+                        <li>palikt Latvijā un strādāt algotu darbu;</li>
+                        <li>atrast algotu darbu ārzemēs un dzīvot Latvijā vai arī migrēt ārzemēs. Es protu angļu valodu, tāpēc apskatu Lielbritāniju un Zviedriju par potenciālām valstīm. Latvija ir manas mājas, tomēr gribētos arī redzēt pasauli.</li>    
+                    </ul>
+                    <p>Pagaidām, viss šis ir tikai spekulācijas. Kad pienāks laiks, tad arī visu uzzināsim.</p>
+                </div>
+                <div class="eng">
+                    <p>Despite the lack of motivation, I am deterministic to get the degree and finish the university with somewhat good marks (7-9), because marks could play important role when applying to Masters.</p>
+                    <p>Next year I will need to defend by Bachelor papers, thus, it would be great idea to work part-time this summer, so I can think about the topic and start writing it. I have messed up with the qualification paper that I defended this winter, thus it would be a good decision that take care of such big tasks in advance.</p>
+                    <p>Hoping , that university will become on-site next semester, so student would finally feel themselves as ones and not a prisoners at home.</p>
+                    <p>After graduation… It is hard to tell what I am going to do. I have the following options in mind:</p>
+                    <ul>
+                        <li>Pursue Masters abroad with specialization in machine learning</li>
+                        <li>Stay in Latvia and just do paid work;</li>
+                        <li>Find a job abroad and stay either in Latvia or migrate abroad as well. I know English, thus thinking of UK or Sweden. Latvia is my home, but I would like to explore the world as well.</li>
+                    </ul>
+                    <p>For now, this is all my speculation. When the time comes, the destiny will unveil itself.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {#  Custom scripts  #}
+    <script type="text/javascript" src="/static/scripts.js"></script>
+    <footer>
+        <div class="footer-content">
+            Autors: Daniels Buls, db19063<br>
+            2022. gads
+        </div>
+    </footer>
+</body>
+</html>
