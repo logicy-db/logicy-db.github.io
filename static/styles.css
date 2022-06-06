@@ -102,7 +102,7 @@ body .page-content {
 }
 body p {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: calc(20px + 1vw);
 }
 body .section {
   position: relative;
@@ -166,9 +166,6 @@ body footer .footer-content {
   body header .header-content .logo-wrapper {
     min-width: 100px;
     text-align: center;
-  }
-  body .page-content {
-    max-width: 1500px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
